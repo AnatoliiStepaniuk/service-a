@@ -13,7 +13,7 @@ public class Controller {
 
     @GetMapping(path = "/a")
     public String response(){
-        return "Response from Public Service (A)";
+        return "Response from the Public Service (A)";
     }
 
     @GetMapping(path = "/ab")
