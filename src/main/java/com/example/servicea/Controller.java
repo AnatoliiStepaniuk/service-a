@@ -15,7 +15,7 @@ public class Controller {
 
     @GetMapping(path = "/a")
     public String response(){
-        return "Response from the Public Service (A) 4.0.0";
+        return "Response from the Public Service (A) 5.0.0";
     }
 
     @GetMapping(path = "/ab")
