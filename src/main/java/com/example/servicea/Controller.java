@@ -1,6 +1,7 @@
 package com.example.servicea;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,9 +14,12 @@ public class Controller {
     @Autowired
     private RestTemplate template;
 
+    @Value("${REPLY:mm?}")
+    private String reply;
+
     @GetMapping(path = "/a")
     public String response(){
-        return "Response from the Public Service (A) 5.0.0";
+        return "Response from the Public Service (A) 5.1.0: " + reply;
     }
 
     @GetMapping(path = "/ab")
