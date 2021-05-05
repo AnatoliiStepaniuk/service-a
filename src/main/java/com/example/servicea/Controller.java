@@ -19,7 +19,7 @@ public class Controller {
 
     @GetMapping(path = "/a")
     public String response(){
-        return "Service A (Public) 5.2.1:" + reply;
+        return "Service A (Public) 6.0.0: " + reply;
     }
 
     @GetMapping(path = "/ab")
